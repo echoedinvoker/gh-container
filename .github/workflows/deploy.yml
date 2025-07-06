@@ -10,7 +10,7 @@ env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
-    environment: testing
+    # environment: testing
     runs-on: ubuntu-latest
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
