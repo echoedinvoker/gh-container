@@ -1,9 +1,13 @@
 import { MongoClient } from 'mongodb';
 
-const connectionProtocol = process.env.MONGODB_CONNECTION_PROTOCOL || 'mongodb+srv';
-const clusterAddress = process.env.MONGODB_CLUSTER_ADDRESS || 'cluster0.tefzwkz.mongodb.net';
-const dbUser = process.env.MONGODB_USERNAME || 'echoedinvoker';
-const dbPassword = process.env.MONGODB_PASSWORD || 'CfQoBFGjjEuY67MD';
+// const connectionProtocol = process.env.MONGODB_CONNECTION_PROTOCOL || 'mongodb+srv';
+// const clusterAddress = process.env.MONGODB_CLUSTER_ADDRESS || 'cluster0.tefzwkz.mongodb.net';
+// const dbUser = process.env.MONGODB_USERNAME || 'echoedinvoker';
+// const dbPassword = process.env.MONGODB_PASSWORD || 'CfQoBFGjjEuY67MD';
+const connectionProtocol = 'mongodb+srv';
+const clusterAddress = 'cluster0.tefzwkz.mongodb.net';
+const dbUser = 'echoedinvoker';
+const dbPassword = 'CfQoBFGjjEuY67MD';
 const dbName = process.env.MONGODB_DB_NAME; 'gha-demo';
 
 const uri = `${connectionProtocol}://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority&appName=Cluster0`;
